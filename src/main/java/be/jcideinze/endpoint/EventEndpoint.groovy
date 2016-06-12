@@ -9,6 +9,7 @@ import static spark.Spark.get
 import static spark.Spark.halt;
 import static spark.Spark.put;
 
+@Singleton
 class EventEndpoint implements Endpoint {
 
     private def path = "/event"
@@ -17,10 +18,6 @@ class EventEndpoint implements Endpoint {
 
     @Override
     void routes() {
-
-        String.metaClass.mapTo = { T ->
-            mapper.readValue(delegate, T)
-        }
 
         get("/event/list", { req, res -> "events list" })
 
