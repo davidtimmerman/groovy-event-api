@@ -5,7 +5,6 @@ import be.jcideinze.model.Registration
 import groovy.sql.Sql
 
 import java.sql.Timestamp
-import java.time.LocalDateTime
 
 @Singleton
 class RegistrationService {

@@ -4,12 +4,8 @@ import be.jcideinze.model.Registration
 import be.jcideinze.service.RegistrationService
 import com.fasterxml.jackson.databind.ObjectMapper
 
-import static spark.Spark.exception;
-import static spark.Spark.get
-import static spark.Spark.halt;
-import static spark.Spark.put;
+import static spark.Spark.*
 
-@Singleton
 class EventEndpoint implements Endpoint {
 
     private def path = "/event"
@@ -19,7 +15,9 @@ class EventEndpoint implements Endpoint {
     @Override
     void routes() {
 
-        get("/event/list", { req, res -> "events list" })
+        String.metaClass.mapTo = { T ->
+        }
+        mapper.readValue(delegate, T)
 
         get("$path/:id/registration/:registration", { req, res ->
             req.params('id')

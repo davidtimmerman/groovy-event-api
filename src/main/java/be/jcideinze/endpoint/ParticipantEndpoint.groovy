@@ -6,9 +6,7 @@ import be.jcideinze.model.Registration
 import java.sql.Connection
 import java.sql.ResultSet
 
-import static spark.Spark.halt
-import static spark.Spark.put
-import static spark.Spark.get
+import static spark.Spark.*
 
 public class ParticipantEndpoint implements Endpoint {
 
