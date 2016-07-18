@@ -7,6 +7,7 @@ import be.jcideinze.endpoint.ParticipantEndpoint
 import be.jcideinze.endpoint.View
 import be.jcideinze.filter.ResponseFilter
 import com.fasterxml.jackson.databind.ObjectMapper
+import io.jsonwebtoken.impl.crypto.MacProvider
 
 import java.security.Key
 
@@ -15,7 +16,7 @@ class App {
     static Key key = MacProvider.generateKey();
     static void main(String[] args) {
 
-        List<Endpoint> endpoints = [EventEndpoint.instance]
+        List<Endpoint> endpoints = [new EventEndpoint()]
         endpoints.forEach({ e -> e.routes(); e.handlers() })
         new View().routes()
         ResponseFilter.instance.filter()

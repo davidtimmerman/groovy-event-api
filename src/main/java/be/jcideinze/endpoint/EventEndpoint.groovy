@@ -15,10 +15,10 @@ class EventEndpoint implements Endpoint {
     @Override
     void routes() {
 
-        String.metaClass.mapTo = { T ->
-        }
-        mapper.readValue(delegate, T)
 
+        String.metaClass.mapTo = { T ->
+            mapper.readValue(delegate, T)
+        }
         get("$path/:id/registration/:registration", { req, res ->
             req.params('id')
         })
