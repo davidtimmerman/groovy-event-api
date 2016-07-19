@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 
 import static spark.Spark.*
 
+@Singleton
 class EventEndpoint implements Endpoint {
 
     private def path = "/event"

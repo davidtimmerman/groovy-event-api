@@ -5,7 +5,7 @@ import be.jcideinze.service.AuthenticationService
 import static spark.Spark.before
 import static spark.Spark.get
 
-
+@Singleton
 class AuthenticationEndpoint implements Endpoint {
 
     private def path = "/auth"

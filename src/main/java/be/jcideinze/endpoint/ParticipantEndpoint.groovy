@@ -8,6 +8,7 @@ import java.sql.ResultSet
 
 import static spark.Spark.*
 
+@Singleton
 public class ParticipantEndpoint implements Endpoint {
 
     @Override
