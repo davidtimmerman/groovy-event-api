@@ -1,7 +1,9 @@
 package be.jcideinze.endpoint
 
 import be.jcideinze.model.Registration
+import be.jcideinze.model.User
 import be.jcideinze.service.RegistrationService
+import be.jcideinze.service.UserService
 import com.fasterxml.jackson.databind.ObjectMapper
 
 import static spark.Spark.*
@@ -26,9 +28,12 @@ class EventEndpoint implements Endpoint {
 
         put("$path/:id/register", { req, res ->
             Registration r = req.body().mapTo(Registration)
-            r.id = 1
             assert r.isValid()
-            RegistrationService.instance.register(new Integer(req.params('id')), r)
+            UserService.instance.create(new User(r.email, r.firstName, r.lastName))
+            //create new user + send email with logon
+            //put registration in cache
+
+            //RegistrationService.instance.register(new Integer(req.params('id')), r)
             res.status(200)
         })
     }
