@@ -3,6 +3,6 @@
 {
 "firstName":"Julie",
 "lastName":"Braem",
-"email":"julie@juliebraem.be",
+"email":"david.timmerman.mail@gmail.com",
 "vat":"BE098098979"
 }

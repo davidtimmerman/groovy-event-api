@@ -1,11 +1,8 @@
 package be.jcideinze.service
 
 import be.jcideinze.Datasource
-import be.jcideinze.model.Registration
 import be.jcideinze.model.User
 import groovy.sql.Sql
-
-import java.sql.Timestamp
 
 @Singleton
 class UserService {

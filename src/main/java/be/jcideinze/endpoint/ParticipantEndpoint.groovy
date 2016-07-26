@@ -1,7 +1,7 @@
 package be.jcideinze.endpoint
 
 import be.jcideinze.Datasource
-import be.jcideinze.model.Registration
+import be.jcideinze.model.db.Registration
 
 import java.sql.Connection
 import java.sql.ResultSet

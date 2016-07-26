@@ -13,13 +13,13 @@ class AuthenticationEndpoint implements Endpoint {
     @Override
     void routes() {
 
-        before("/event/*", { req, res ->
+/*        before("/event*//*", { req, res ->
             boolean authenticated;
             AuthenticationService.instance.verifyJwt(req.cookie("jwt"))
             if (!authenticated) {
                 halt(401, "You are not welcome here");
             }
-        });
+        });*/
 
         get("$path/identify", { req, res ->
             final String email = req.queryParams("email")

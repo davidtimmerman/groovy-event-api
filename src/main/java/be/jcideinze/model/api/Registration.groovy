@@ -1,4 +1,4 @@
-package be.jcideinze.model
+package be.jcideinze.model.api
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
@@ -6,19 +6,14 @@ import groovy.transform.ToString
 @ToString
 @EqualsAndHashCode
 class Registration {
-    Integer id
+    String email
     String firstName
     String lastName
-    String email
     String vat
 
-    List toList() {
-        this.class.declaredFields.findAll { !it.synthetic }.collect {
-            this."$it.name"
-        }
-    }
 
     Boolean isValid() {
         return firstName && lastName && email && vat
+        //TODO regex for email and vat
     }
 }

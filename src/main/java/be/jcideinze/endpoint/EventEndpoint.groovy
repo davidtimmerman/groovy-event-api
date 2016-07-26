@@ -1,6 +1,6 @@
 package be.jcideinze.endpoint
 
-import be.jcideinze.model.Registration
+import be.jcideinze.model.api.Registration
 import be.jcideinze.model.User
 import be.jcideinze.service.RegistrationService
 import be.jcideinze.service.UserService
@@ -22,16 +22,19 @@ class EventEndpoint implements Endpoint {
         String.metaClass.mapTo = { T ->
             mapper.readValue(delegate, T)
         }
-        get("$path/:id/registration/:registration", { req, res ->
-            req.params('id')
+        get("$path/confirm/:uuid", { req, res ->
+            RegistrationService.instance.confirmRegistration(req.params('uuid'))
+            res.redirect("/index")
         })
 
         put("$path/:id/register", { req, res ->
             Registration r = req.body().mapTo(Registration)
             assert r.isValid()
-            UserService.instance.create(new User(r.email, r.firstName, r.lastName))
+            final User u = UserService.instance.create(new User(r.email, r.firstName, r.lastName))
+            final UUID uuid = RegistrationService.instance.registerInCache(u, Long.parseLong(req.params('id')), r.vat)
+            RegistrationService.instance.requestConfirmation(uuid, u.email)
+
             //create new user + send email with logon
-            //put registration in cache
 
             //RegistrationService.instance.register(new Integer(req.params('id')), r)
             res.status(200)
