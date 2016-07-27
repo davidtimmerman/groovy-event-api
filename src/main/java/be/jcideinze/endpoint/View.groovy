@@ -9,17 +9,37 @@ import spark.template.freemarker.FreeMarkerEngine
 
 import static spark.Spark.get
 
+@Singleton(strict=false)
 public class View {
+
+    final FreeMarkerEngine freeMarkerEngine
+    final Configuration freeMarkerConfiguration
+
+    private View() {
+//        instance = new View()
+        freeMarkerEngine = new FreeMarkerEngine()
+        freeMarkerConfiguration = new Configuration()
+        freeMarkerConfiguration.setTemplateLoader(new ClassTemplateLoader(App.class, "/"));
+        freeMarkerEngine.setConfiguration(freeMarkerConfiguration);
+    }
 
     void routes() {
 
-        get("/index", { req, res ->
-            FreeMarkerEngine freeMarkerEngine = new FreeMarkerEngine();
-            Configuration freeMarkerConfiguration = new Configuration();
-            freeMarkerConfiguration.setTemplateLoader(new ClassTemplateLoader(App.class, "/"));
-            freeMarkerEngine.setConfiguration(freeMarkerConfiguration);
+        get("/", { req, res ->
             Map<String, Object> attributes = new HashMap<>();
             freeMarkerEngine.render(new ModelAndView(attributes, "index.ftl"));
+        })
+
+
+        get("/reservaties", { req, res ->
+            Map<String, Object> attributes = new HashMap<>();
+            freeMarkerEngine.render(new ModelAndView(attributes, "ticket.ftl"));
+        })
+
+
+        get("/event", { req, res ->
+            Map<String, Object> attributes = new HashMap<>();
+            freeMarkerEngine.render(new ModelAndView(attributes, "event.ftl"));
         })
 
     }

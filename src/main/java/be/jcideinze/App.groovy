@@ -23,7 +23,7 @@ class App {
 
         List<Endpoint> endpoints = [EventEndpoint.instance, ParticipantEndpoint.instance, AuthenticationEndpoint.instance]
         endpoints.forEach({ e -> e.routes(); e.handlers() })
-        new View().routes()
+        View.instance.routes()
         ResponseFilter.instance.filter()
 
 
