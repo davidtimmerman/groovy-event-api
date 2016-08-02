@@ -13,7 +13,7 @@ class Registration {
 
 
     Boolean isValid() {
-        return firstName && lastName && email && vat
+        return firstName && lastName && email
         //TODO regex for email and vat
     }
 }

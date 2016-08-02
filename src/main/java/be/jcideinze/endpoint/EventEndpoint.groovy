@@ -1,5 +1,6 @@
 package be.jcideinze.endpoint
 
+import be.jcideinze.exceptions.RegistrationNotFoundException
 import be.jcideinze.model.api.Registration
 import be.jcideinze.model.User
 import be.jcideinze.service.RegistrationService
@@ -24,7 +25,8 @@ class EventEndpoint implements Endpoint {
         }
         get("$path/confirm/:uuid", { req, res ->
             RegistrationService.instance.confirmRegistration(req.params('uuid'))
-            res.redirect("/index")
+            //todo call authentication business and create a jwt - set a cookie and add the jwt
+            res.redirect("/reservaties")
         })
 
         put("$path/:id/register", { req, res ->
@@ -34,9 +36,7 @@ class EventEndpoint implements Endpoint {
             final UUID uuid = RegistrationService.instance.registerInCache(u, Long.parseLong(req.params('id')), r.vat)
             RegistrationService.instance.requestConfirmation(uuid, u.email)
 
-            //create new user + send email with logon
 
-            //RegistrationService.instance.register(new Integer(req.params('id')), r)
             res.status(200)
         })
     }
@@ -48,6 +48,18 @@ class EventEndpoint implements Endpoint {
             exception.printStackTrace()
             def head = exception.stackTrace.head()
             res.status(500);
+            res.body("""
+            {
+                \"exception\":\"$exception.message\",
+                \"stackTrace\":\"$head\",
+            }
+            """);
+        });
+
+        exception(RegistrationNotFoundException.class, { exception, req, res ->
+            exception.printStackTrace()
+            def head = exception.stackTrace.head()
+            res.status(404);
             res.body("""
             {
                 \"exception\":\"$exception.message\",

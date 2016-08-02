@@ -1,6 +1,7 @@
 package be.jcideinze.service
 
 import be.jcideinze.Datasource
+import be.jcideinze.exceptions.RegistrationNotFoundException
 import be.jcideinze.model.db.Registration
 import be.jcideinze.model.User
 import be.jcideinze.repository.RegistrationRepository
@@ -43,11 +44,11 @@ class RegistrationService {
      */
     Registration confirmRegistration(String uuid) {
         Optional<Registration> registration = findCachedRegistration uuid
-        def r = RegistrationRepository.instance.create(registration.get())
+        def r = RegistrationRepository.instance.create(registration.orElseThrow(new RegistrationNotFoundException("Reservatie niet teruggevonden")))
         r.get()
     }
 
     private Optional<Registration> findCachedRegistration(String uuid) {
-        Optional.ofNullable(cache.peek(uuid)) //todo peekAndRemove
+        Optional.ofNullable(cache.peekAndRemove(uuid))
     }
 }

@@ -65,12 +65,64 @@
 
 				<!-- ## TAB NAV ## -->
 				<ul id="qcTabNav" class="clearfix">
-					<li><a href="#tab-1"><i class="icon-ticket icon"></i> <span>Book Ticket</span></a></li>
+					<li><a href="#tab-5"><i class="icon-tag-1 icon"></i> <span>Reservatie Status</span></a></li>
+					<li><a href="#tab-1"><i class="icon-ticket icon"></i> <span>Nieuwe Reservatie</span></a></li>
 					<li><a href="#tab-2"><i class="icon-book-open icon"></i> <span>FAQ's</span></a></li>
-					<li><a href="#tab-3"><i class="icon-lkdto icon"></i> <span>T & C</span></a></li>
+					<li><a href="#tab-3"><i class="icon-lkdto icon"></i> <span>Voorwaarden</span></a></li>
 					<li><a href="#tab-4"><i class="icon-mail-1 icon"></i> <span>Contact</span></a></li>
 				</ul>
 
+
+				<!-- ===============================================
+
+					PAGE 5 - STATUS
+
+				=============================================== -->
+				<div id="tab-3" class="qcTabPage clearfix">
+
+					<!-- ## ROW ## -->
+					<div class="row clearfix">
+
+						<!-- ## TAB TITLE ## -->
+						<div class="col-4 col" >
+							<div class="qcTabTitle no-border">
+								<h4>Status <span> De status van uw reservatie</span></h4>
+							</div>
+						</div>
+
+						<!-- ## TAB DESC ## -->
+						<div class="col-8 col">
+							<div class="box no-border nopad">
+								<p class="qcPageDesc full">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, accusamus, sed, necessitatibus ea nemo hic molestias amet tempora fuga pariatur officia itaque eum quis rerum aliquam minus illo nulla laborum!</p>
+							</div>
+						</div>
+
+					</div>
+					<!-- ## ROW END ## -->
+
+					<!-- ## ROW ## -->
+					<div class="dblBorder">
+						<div class="row clearfix">
+							<div class="col-12 col">
+
+								<!-- ## T & C LIST ## -->
+								<div class="qcEventlayout">
+									<ul class="qcCheckList">
+										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+										<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+									</ul>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<!-- ## ROW END ## -->
+
+
+				</div>
+				<!-- ## PAGE 5 END ## -->
 
 				<!-- ===============================================
 
@@ -102,51 +154,40 @@
 									</div>
 									
 									<!-- ## TICKET FORM ## -->
-									<form action="includes/form/qcForm.php" id="qcTcktForm" class="qcForm" name="qcTcktForm" method="post">
+									<form id="qcTcktForm" class="qcForm" name="qcTcktForm" onsubmit="register();return false;">
 										<ul class="clearfix">
 											<li>
 												<div class="wrapper">
-													<label for="name">Name</label>
-													<input type="text" id="name" name="name" class="requiredField" value="" placeholder="Enter full name" />
+													<label for="lastname">Naam</label>
+													<input type="text" id="lastname" name="lastName" class="requiredField" value="" placeholder="naam" />
+												</div>
+											</li>
+											<li>
+												<div class="wrapper">
+													<label for="firstname">Voornaam</label>
+													<input type="text" id="firstname" name="firstName" class="requiredField" value="" placeholder="voornaam" />
 												</div>
 											</li>
 											<li>
 												<div class="wrapper">
 													<label for="email">Email</label>
-													<input type="text" id="email" name="email" class="email requiredField" value="" placeholder="Enter email-id" />
+													<input type="text" id="email" name="email" class="email requiredField" value="" placeholder="uw email adres" />
 												</div>
 											</li>
 											<li>
 												<div class="wrapper">
-													<label for="phone">Phone</label>
-													<input type="text" id="phone" name="phone" class="requiredField" value="" placeholder="Enter contact number" />
+													<label for="vat">BTW</label>
+													<input type="text" id="vat" name="vat" value="" placeholder="uw BTW-nummer indien van toepassing" />
 												</div>
 											</li>
-											<li>
-												<div class="wrapper herr">
-													<label for="ticket">Ticket</label>
-													<select name="ticket" id="ticket" class="requiredField">
-														<option value="">Select Package</option>
-														<option value="early">Early Bird</option>
-														<option value="general">General</option>
-														<option value="vip">VIP</option>
-													</select>
-													<select name="quantity" id="quantity" class="requiredField">
-														<option value="">Quantity</option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-													</select>
-												</div>
-											</li>
+
 										</ul>
 										<div class="qcTcktCheck">
 											<input type="checkbox" value="Book Ticket" class="requiredField checkbox"/> 
-											<span>I'm agree to the Terms & Conditions.</span>
+											<span>Ik bevestig de aanvaarding van de algemene voorwaarden</span>
 										</div>
 										<div class="qcTcktSubmit">
-											<input type="hidden" name="formtype" value="ticket"/>
-											<button type="submit" class="submit">Reserve Ticket</button>
+											<button type="submit" class="submit">Reserveer mijn ticket</button>
 										</div>
 									</form>
 								</div>
@@ -516,6 +557,7 @@
 <script src="./includes/js/library.js" type="text/javascript"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&#038;sensor=false&#038;ver=3.5" type="text/javascript"></script>
 <script src="./includes/js/init.js" type="text/javascript"></script>
+<script src="./includes/js/jci.js" type="text/javascript"></script>
 
 </body>
 
