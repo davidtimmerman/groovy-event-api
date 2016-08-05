@@ -13,7 +13,10 @@
 	<link rel="stylesheet" media="all" href="./includes/css/style.css"/>
 
 	<!-- ## GOOGLE FONTS ## -->
+
+	<!-- ## GOOGLE FONTS ## -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 
@@ -27,14 +30,19 @@
 
 		<!-- ## LOGO ## -->
 		<div id="qcLogo" class="col-6 col">
-			<a href="/"><img src="./includes/img/placeholder/logo-header.png" alt="" /></a>
+			<a href="/"><img src="./includes/img/jci_logo.png" style="margin-bottom:-10px" alt="" /><span style="
+    color: #fff;
+    font: 800 40px Roboto, sans-serif;
+    line-height: 100px;
+">  Deinze onderneemt!</span></a>
 		</div>
+
 
 		<!-- ## SITE NAVIGATION ## -->
 		<nav id="qcPriNav" class="col-6 col">
 			<ul class="clearfix">
-				<li class="current"><a href="event"><i class="icon-calendar-2 icon"></i> <span>Event Details</span></a></li>
-				<li><a href="reservaties"><i class="icon-ticket icon"></i> <span>Buy Tickets</span></a></li>
+				<li class="current"><a href="event"><i class="icon-calendar-2 icon"></i> <span>Event Informatie</span></a></li>
+				<li><a href="reservaties"><i class="icon-ticket icon"></i> <span>Reserveer Tickets</span></a></li>
 			</ul>
 		</nav>
 
@@ -49,7 +57,7 @@
 	<!-- ## PAGE TITLE ## -->
 	<section id="qcSecbar">
 		<div class="qcContainer">
-			<h1>Event. <span>Know more about the event</span></h1>
+			<h1>Business Events</h1>
 		</div>
 	</section>
 
@@ -65,10 +73,10 @@
 
 				<!-- ## TAB NAV ## -->
 				<ul id="qcTabNav" class="clearfix">
-					<li><a href="#tab-1"><i class="icon-book-open icon"></i> <span>About</span></a></li>
-					<li><a href="#tab-2"><i class="icon-clock-1 icon"></i> <span>Schedule</span></a></li>
+					<li><a href="#tab-1"><i class="icon-book-open icon"></i> <span>Algemeen</span></a></li>
+					<li><a href="#tab-2"><i class="icon-clock-1 icon"></i> <span>Events</span></a></li>
 					<li><a href="#tab-3"><i class="icon-user-add icon"></i> <span>Speakers</span></a></li>
-					<li><a href="#tab-4"><i class="icon-map icon"></i> <span>Venue</span></a></li>
+					<li><a href="#tab-4"><i class="icon-map icon"></i> <span>Locatie</span></a></li>
 					<li><a href="#tab-5"><i class="icon-picture icon"></i> <span>Gallery</span></a></li>
 				</ul>
 
@@ -201,38 +209,51 @@
 					<div class="dblBorder">
 						<div class="row clearfix">
 							<div class="col-12 col">
-								<!-- ## FEATURE COUNTER ## -->
-								<div id="qcAbtCount" class="qcEventlayout clearfix">
-									<div class="col-3 col">
-										<div class="box">
-											<i class="icon-trophy icon"></i>
-											<div class="abtCountNum">25</div>
-											<div class="abtCountTitle">Awards</div>
-										</div>
-									</div>
-									<div class="col-3 col">
-										<div class="box">
-											<i class="icon-direction icon"></i>
-											<div class="abtCountNum">43</div>
-											<div class="abtCountTitle">Projects</div>
-										</div>
-									</div>
-									<div class="col-3 col">
-										<div class="box">
-											<i class="icon-mic icon"></i>
-											<div class="abtCountNum">09</div>
-											<div class="abtCountTitle">Podacsts</div>
-										</div>
-									</div>
-									<div class="col-3 col">
-										<div class="box">
-											<i class="icon-globe-1 icon"></i>
-											<div class="abtCountNum">05</div>
-											<div class="abtCountTitle">Offices</div>
-										</div>
-									</div>
+								<!-- ## MODULE TITLE ## -->
+								<div class="qcModTitle">
+									<h1>Partners</h1>
+									<p>Those helping hands</p>
 								</div>
-								<!-- ## FEATURE COUNTER END ## -->
+
+								<!-- ## SPONSORS LIST ## -->
+								<ul class="qcSposnsorList clearfix">
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+								</ul>
+								<!-- ## SPONSERS LIST END ## -->
 							</div>
 						</div>
 					</div>
@@ -281,7 +302,7 @@
 									<!-- ## DAY 1 ## -->
 									<div class="qcScheduleDay">
 										<header class="qcSchDay">
-											<p>Saturday <span>31 Oct</span></p>
+											<p><span>29 September</span> 2016</p>
 										</header>
 										<ul class="qcScheduleList clearfix">
 											<li>
@@ -295,10 +316,10 @@
 											</li>
 											<li>
 												<a href="#" class="tips" title="PHILOSOPHY">
-													<img src="http://placehold.it/300x200" alt="" />
+													<img src="http://www.debic.com/sites/default/files/debic-content/respondr/bartvancauwenberghe.jpg" alt="" />
 													<div class="qcSchDesc">
-														<p class="qcSchTime">11:30 <sup>AM Onwards</sup></p>
-														<p class="qcSchSpeaker">Philosophy <span>- John Doe</span></p>
+														<p class="qcSchTime">19:30 <sup></sup></p>
+														<p class="qcSchSpeaker">De chocolade fabriek <span>- Bart Van Cauwenberghe</span></p>
 													</div>
 												</a>
 											</li>
@@ -336,7 +357,62 @@
 									<!-- ## DAY 2 ## -->
 									<div class="qcScheduleDay">
 										<header class="qcSchDay">
-											<p>Saturday <span>31 Oct</span></p>
+											<p><span>24 November</span> 2016</p>
+										</header>
+										<ul class="qcScheduleList clearfix">
+											<li>
+												<a href="#" class="tips" title="INTRODUCTION">
+													<img src="http://placehold.it/300x200" alt="" />
+													<div class="qcSchDesc">
+														<p class="qcSchTime">10:00 <sup>AM Onwards</sup></p>
+														<p class="qcSchSpeaker">Introduction <span>- John Doe</span></p>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="tips" title="PHILOSOPHY">
+													<img src="http://www.brunovervisch.be/img/seminaries.jpg" alt="" />
+													<div class="qcSchDesc">
+														<p class="qcSchTime">11:30 <sup>AM Onwards</sup></p>
+														<p class="qcSchSpeaker">Philosophy <span>- John Doe</span></p>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="tips" title="HISTORY">
+													<img src="http://placehold.it/300x200" alt="" />
+													<div class="qcSchDesc">
+														<p class="qcSchTime">01:00 <sup>PM Onwards</sup></p>
+														<p class="qcSchSpeaker">History <span>- John Doe</span></p>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="tips" title="GEOGRAPHY">
+													<img src="http://placehold.it/300x200" alt="" />
+													<div class="qcSchDesc">
+														<p class="qcSchTime">10:00 <sup>AM Onwards</sup></p>
+														<p class="qcSchSpeaker">Introduction <span>- John Doe</span></p>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="tips" title="INTRODUCTION">
+													<img src="http://placehold.it/300x200" alt="" />
+													<div class="qcSchDesc">
+														<p class="qcSchTime">11:30 <sup>AM Onwards</sup></p>
+														<p class="qcSchSpeaker">Introduction <span>- John Doe</span></p>
+													</div>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<!-- ## DAY 2 END ## -->
+
+									<!-- ## DAY 3 ## -->
+									<div class="qcScheduleDay">
+										<header class="qcSchDay">
+											<p><span>16 Februari</span> 2017</p>
 										</header>
 										<ul class="qcScheduleList clearfix">
 											<li>
@@ -386,7 +462,7 @@
 											</li>
 										</ul>
 									</div>
-									<!-- ## DAY 2 END ## -->
+									<!-- ## DAY 3 END ## -->
 
 								</div>
 								<!-- ## SCHEDULE LIST END ## -->
@@ -522,59 +598,7 @@
 					</div>
 					<!-- ## ROW END ## -->
 
-					<!-- ## ROW ## -->
-					<div class="dblBorder">
-						<div class="row clearfix">
-							<div class="col-12 col">
-								<!-- ## MODULE TITLE ## -->
-								<div class="qcModTitle">
-									<h1>Partners</h1>
-									<p>Those helping hands</p>
-								</div>
 
-								<!-- ## SPONSORS LIST ## -->
-								<ul class="qcSposnsorList clearfix">
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-								</ul>
-								<!-- ## SPONSERS LIST END ## -->
-							</div>
-						</div>
-					</div>
-					<!-- ## ROW END ## -->
 
 				</div>
 				<!-- ## PAGE 3 END ## -->
@@ -594,18 +618,16 @@
 						<!-- ## TAB TITLE ## -->
 						<div class="col-5 col">
 							<div class="qcTabTitle no-border">
-								<h4>Venue & Layout<span> Venue & Layout of to the event</span></h4>
+								<h4>Locatie</h4>
 							</div>
 						</div>
 
 						<!-- ## ADDRESS LIST ## -->
 						<div class="col-7 col">
 							<ul class="qcAddress">
-								<li><i class="icon-map"></i><p><strong>ADDRESS</strong>: 1600, Amphitheatre Parkway, CA 94043</p></li>
-								<li><i class="icon-user-1"></i><p><strong>PHONE</strong>:  +91-8097000000</p></li>
-								<li><i class="icon-print"></i><p><strong>FAX</strong>: +91-8097000001</p></li>
-								<li><i class="icon-mail-1"></i><p><strong>EMAIL</strong>: quadcodes@gmail.com</p></li>
-								<li><i class="icon-globe-1"></i><p><strong>WEBSITE</strong>: <a title="website" href="http://www.quadcodes.com" target="_blank">www.quadcodes.com</a></p></li>
+								<li><i class="icon-map"></i><p><strong>ADRES</strong>: Désiré Delcroixstraat 1A, 9800 Deinze</p></li>
+								<li><i class="icon-user-1"></i><p><strong>TEL</strong>:  09/381 95 00 </p></li>
+								<li><i class="icon-mail-1"></i><p><strong>EMAIL</strong>: info@ocmwdeinze.be</p></li>
 							</ul>
 						</div>
 
@@ -619,10 +641,8 @@
 
 								<!-- ## VENUE LAYOUT PLAN ## -->
 								<div class="qcEventlayout">
-									<h1>Layout Plan</h1>
-									<a href="http://placehold.it/1280x1024" data-rel="prettyPhoto[pp_gal]">
-										<img src="http://placehold.it/900x350" alt="" />
-									</a>
+									<h1>De Rekkelinge</h1>
+									<img src="http://s2.nieuwsbladcdn.be/Assets/Images_Upload/2013/07/23/OCMW_buurtcentrum_De_Rekkelinge.JPG?maxheight=460&maxwidth=629" alt="" />
 								</div>
 
 								<div class="dblBorder only"></div>

@@ -65,7 +65,7 @@ Copyright: © 2014 QuadCodes.
 
 body {
     color: #777;
-    font: 400 13px/26px "Open sans", Helvetica, sans-serif;
+    font: 400 13px/26px "Roboto", sans-serif;
     background: #000;
 }
 .qcContainer {
@@ -95,7 +95,7 @@ video#bgvid {
 
 #qcEventCountDown {
     position: relative;
-    background: #ff4e00;
+    background: #f37121;
     margin: 0 auto;
 }
 .dash {
@@ -122,7 +122,7 @@ video#bgvid {
 .digit {
     position: absolute;
     width: 100%;
-    font: 600 36px/70px "Open sans", Arial, sans-serif;
+    font: 600 36px/70px "Roboto", sans-serif;
     margin-right: 10px;
 }
 .digit-1 {
@@ -138,8 +138,8 @@ video#bgvid {
     display: block;
     position: relative;
     width: 100%;
-    color: #fff;
-    font: 500 10px/30px "Open sans", Helvetica, sans-serif;
+    color: #505050;
+    font: 500 10px/30px "Roboto", sans-serif;
     background: #111;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -150,7 +150,7 @@ video#bgvid {
 /* === 2.2 EVENT BANNER/TICKER === */
 
 #qcEventBanner {
-    background: #313131;
+    background: #3a67b1;
 }
 #qcEventBanner:before {
     content: '';
@@ -185,7 +185,7 @@ video#bgvid {
     margin-right: 15px;
     margin-left: 8px;
     color: #fff;
-    font: 600 36px/90px "Open sans", Helvetica, sans-serif;
+    font: 600 36px/90px "Roboto", sans-serif;
     letter-spacing: -1px;
 }
 
@@ -254,7 +254,7 @@ video#bgvid {
 #qcPriNav li a, #qcPriNav li.current a:hover {
     display: block;
     color: #fff;
-    font: 600 17px/100px "Open sans", Helvetica, sans-serif;
+    font: 600 17px/100px "Roboto", sans-serif;
     letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
@@ -264,10 +264,10 @@ video#bgvid {
     -webkit-transition: all .25s linear;
 }
 #qcPriNav li:first-child a {
-    background: #1db6ad;
+    background: #0097d7;
 }
 #qcPriNav li:last-child a {
-    background: #42d0c7;
+    background: #0097d7;
 }
 #qcPriNav li a i, #qcPriNav li.current a:hover i {
     position: absolute;
@@ -299,10 +299,10 @@ video#bgvid {
     margin: -2px 0 0 -10px;
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
-    border-top: 18px solid #1DB6AD;
+    border-top: 18px solid #0097d7;
 }
 #qcPriNav li.current:last-child:after {
-    border-top: 18px solid #42D0C7;
+    border-top: 18px solid #0097d7;
 }
 
 
@@ -331,7 +331,7 @@ video#bgvid {
     display: block;
     padding: 40px 0;
     color: #444;
-    font: 600 14px/14px "Open sans", Helvetica, sans-serif;
+    font: 600 14px/14px "Roboto", sans-serif;
     text-align: center;
     text-transform: uppercase;
 }
@@ -360,11 +360,11 @@ video#bgvid {
     border-right: 1px #aaa solid;
 }
 #qcTabNav li.active a, #qcTabNav li.active a:hover {
-    color: #FF4E00;
+    color: #f37121;
     background: #fff;
 }
 #qcTabNav li.active a i {
-    color: #FF4E00;
+    color: #f37121;
 }
 
 
@@ -387,14 +387,14 @@ video#bgvid {
     height: 100px;
 }
 #qcHeader.scrolled {
-    border-bottom: 1px #ddd solid;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 2px #2e7ea0 solid;
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);*/
 }
 
 /* === 4.2 LOGO === */
 
 #qcLogo {
-    background: #fff;
+    background: #0097d7;
 }
 #qcLogo a {
     display: block;
@@ -432,9 +432,9 @@ video#bgvid {
 }
 #qcSecbar h1 {
     position: relative;
-    color: #333;
-    font: 600 90px/210px "Open sans", Helvetica, sans-serif;
-    letter-spacing: -6px;
+    color: #505050;
+    font: 600 80px/210px "Roboto", sans-serif;
+    letter-spacing: -2px;
 }
 #qcSecbar h1 span {
     position: relative;
@@ -453,12 +453,13 @@ video#bgvid {
 .qcModTitle h1 {
     margin-bottom: 15px;
     color: #333;
-    font: 400 40px/40px "Open sans", Helvetica,Arial,sans-serif;
+    font: 400 40px/40px "Roboto",Arial,sans-serif;
     letter-spacing: -2px;
 }
 .qcModTitle p {
     color: #777;
-    font: 100 18px/18px "Raleway", Helvetica,Arial,sans-serif;
+    font: 100 18px/18px Roboto, sans-serif;
+    letter-spacing: 1px;
 }
 
 
@@ -469,7 +470,7 @@ video#bgvid {
 }
 .qcEventlayout h1 {
     color: #222;
-    font: 600 24px/36px "Open sans", Helvetica, Arial, sans-serif;
+    font: 600 24px/36px "Roboto", sans-serif;
     margin-bottom: 30px;
     letter-spacing: -0px;
     text-transform: uppercase;
@@ -484,7 +485,7 @@ video#bgvid {
 
 #qcFooter {
     padding: 75px 0;
-    background: #222;
+    background: #916caf;
 }
 #qcFooterNav li {
     display: inline-block;
@@ -575,7 +576,7 @@ header.qcSchDay {
     height: 50px;
     color: #fff;
     font: 300 16px/50px "Open sans", Helvetica,Arial,sans-serif;
-    background: #1DB6AD;
+    background: #0097d7;
     text-align: center;
     text-transform: uppercase;
     -webkit-transform: rotate(-90deg);
@@ -657,7 +658,7 @@ header.qcSchDay span {
     position: absolute;
     top: 50px;
     left: 15px;
-    color: #42D0C7;
+    color: #0097d7;
     font: 300 12px/12px "Open sans", Helvetica,Arial,sans-serif;
     text-transform: uppercase;
 }
@@ -763,12 +764,12 @@ header.qcSchDay span {
     font-size: 14px;
     line-height: 55px;
     text-transform: uppercase;
-    background: #42D0C7;
-    border: 1px #42D0C7 solid;
+    background: #0097d7;
+    border: 1px #0097d7 solid;
     cursor: pointer;
 }
 .qcSubscribeForm .inputButton:hover {
-    background: #1DB6AD;
+    background: #0097d7;
 }
 
 
@@ -792,13 +793,13 @@ header.qcSchDay span {
     border-radius: 3px 3px 0 0;
 }
 .qcPricing:nth-child(1) header {
-    background: #42D0C7;
+    background: #0097d7;
 }
 .qcPricing:nth-child(2) header {
     background: #FF4D00;
 }
 .qcPricing:nth-child(3) header {
-    background: #42D0C7;
+    background: #0097d7;
 }
 .qcPricing .price {
     color: #777;
@@ -922,16 +923,17 @@ header.qcSchDay span {
     top: 20px;
     padding: 14px;
     color: #fff;
-    font-size: 13px;
+    font: 400 14px/14px Roboto, sans-serif;
     text-transform: uppercase;
-    background: #FF4D00;
+    background: #f37121;
     border: 0;
-    border-radius: 2px;
+    border-radius: 10px;
     cursor: pointer;
     letter-spacing: 1px;
 }
 .qcTcktSubmit button:hover {
-    background: #42D0C7;
+    background: #7dc242;
+    font: 600 14px/14px Roboto, sans-serif;
 }
 /* === CONTACT  === */
 .qcTcktRegForm.contact {
@@ -1189,8 +1191,8 @@ ul.qcAddress li a {
     border-bottom: 1px #ccc solid;
 }
 .qcTabTitle h4 {
-    color: #FF4E00;
-    font: 100 70px/70px "Raleway", Helvetica, Arial, sans-serif;
+    color: #f37121;
+    font: 100 70px/70px "Roboto", sans-serif;
     letter-spacing: -2px;
 }
 .qcTabTitle:after {

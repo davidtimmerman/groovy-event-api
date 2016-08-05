@@ -14,8 +14,7 @@
 
 	<!-- ## GOOGLE FONTS ## -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 
 </head>
 
@@ -24,17 +23,21 @@
 <!-- ## HEADER ## -->
 <header id="qcHomeHeader">
 	<div class="row">
-
 		<!-- ## LOGO ## -->
 		<div id="qcLogo" class="col-6 col">
-			<a href="/"><img src="./includes/img/placeholder/logo-header.png" alt="" /></a>
+			<a href="/"><img src="./includes/img/jci_logo.png" style="margin-bottom:-10px" alt="" /><span style="
+    color: #fff;
+    font: 800 40px Roboto, sans-serif;
+    line-height: 100px;
+">  Deinze onderneemt!</span></a>
 		</div>
+
 
 		<!-- ## SITE NAVIGATION ## -->
 		<nav id="qcPriNav" class="col-6 col">
 			<ul class="clearfix">
-				<li><a href="event"><i class="icon-calendar-2 icon"></i> <span>Event Details</span></a></li>
-				<li><a href="reservaties"><i class="icon-ticket icon"></i> <span>Buy Tickets</span></a></li>
+				<li><a href="event"><i class="icon-calendar-2 icon"></i> <span>Event Informatie</span></a></li>
+				<li class="current"><a href="reservaties"><i class="icon-ticket icon"></i> <span>Reserveer Tickets</span></a></li>
 			</ul>
 		</nav>
 
@@ -45,7 +48,7 @@
 		<div id="qcEventCountDown" class="col-6 col">
 			<!-- ## DAYS ## -->
 			<div class="dash days_dash">
-				<div class="dash_title">days</div>
+				<div class="dash_title">dagen</div>
 				<div class="digits clearfix">
 					<div class="digit digit-1">0</div>
 					<div class="digit digit-2">0</div>
@@ -54,7 +57,7 @@
 			</div>
 			<!-- ## HOURS ## -->
 			<div class="dash hours_dash">
-				<div class="dash_title">hours</div>
+				<div class="dash_title">uren</div>
 				<div class="digits clearfix">
 					<div class="digit digit-1">0</div>
 					<div class="digit digit-2">0</div>
@@ -62,7 +65,7 @@
 			</div>
 			<!-- ## MINUTES ## -->
 			<div class="dash minutes_dash">
-				<div class="dash_title">minutes</div>
+				<div class="dash_title">minuten</div>
 				<div class="digits clearfix">
 					<div class="digit digit-1">0</div>
 					<div class="digit digit-2">0</div>
@@ -70,7 +73,7 @@
 			</div>
 			<!-- ## SECONDS ## -->
 			<div class="dash seconds_dash">
-				<div class="dash_title">seconds</div>
+				<div class="dash_title">seconden</div>
 				<div class="digits clearfix">
 					<div class="digit digit-1">0</div>
 					<div class="digit digit-2">0</div>
@@ -81,10 +84,10 @@
 		<!-- ## EVENT BANNER ## -->
 		<div id="qcEventBanner" class="col-6 col">
 			<ul>
-				<li><b>EVC-2014</b> Enchanted Valley Carnival 2014</li>
-				<li><b>#LIVE.</b> As though heaven is on earth.</li>
-				<li><b>#LOVE.</b> As though you have never been hurt before.</li>
-				<li><b>#DANCE.</b> As though no one is watching you.</li>
+				<li><b>29-09-2016</b> De chocolade fabriek</li>
+				<li><b>24-11-2016</b> Over te nemen/Over te laten</li>
+				<li><b>16-02-2017</b> U bent?</li>
+				<li><b>Be Better.</b></li>
 			</ul>
 		</div>
 

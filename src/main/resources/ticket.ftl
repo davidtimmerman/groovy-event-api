@@ -3,7 +3,7 @@
 <head>
 	<!-- ## SITE META ## -->
 	<meta charset="utf-8">
-	<title>Eventicka | Event Landing Page & Ticketing</title>
+	<title>JCI Deinze Business Event</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -14,9 +14,7 @@
 
 	<!-- ## GOOGLE FONTS ## -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -27,14 +25,19 @@
 
 		<!-- ## LOGO ## -->
 		<div id="qcLogo" class="col-6 col">
-			<a href="/"><img src="./includes/img/placeholder/logo-header.png" alt="" /></a>
+			<a href="/"><img src="./includes/img/jci_logo.png" style="margin-bottom:-10px" alt="" /><span style="
+    color: #fff;
+    font: 800 40px Roboto, sans-serif;
+    line-height: 100px;
+">  Deinze onderneemt!</span></a>
 		</div>
+
 
 		<!-- ## SITE NAVIGATION ## -->
 		<nav id="qcPriNav" class="col-6 col">
 			<ul class="clearfix">
-				<li><a href="event"><i class="icon-calendar-2 icon"></i> <span>Event Details</span></a></li>
-				<li class="current"><a href="reservaties"><i class="icon-ticket icon"></i> <span>Buy Tickets</span></a></li>
+				<li><a href="event"><i class="icon-calendar-2 icon"></i> <span>Event Informatie</span></a></li>
+				<li class="current"><a href="reservaties"><i class="icon-ticket icon"></i> <span>Reserveer Tickets</span></a></li>
 			</ul>
 		</nav>
 
@@ -49,7 +52,7 @@
 	<!-- ## PAGE TITLE ## -->
 	<section id="qcSecbar">
 		<div class="qcContainer">
-			<h1>Ticket. <span>Reserve seat for yourself</span></h1>
+			<h1>Reservatie</h1>
 		</div>
 	</section>
 
@@ -137,7 +140,7 @@
 						<!-- ## TAB TITLE & DESC ## -->
 						<div class="col-4 col" >
 							<div class="qcTabTitle no-border">
-								<h4>Book ticket<span> Hurry ! Limited attendees only</span></h4>
+								<h4>Nieuwe Reservatie<span> nog 35 plaatsen beschikbaar</span></h4>
 								<p class="qcPageDesc full">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, accusamus, sed, necessitatibus ea nemo hic molestias amet tempora fuga pariatur officia itaque eum quis rerum aliquam minus illo nulla laborum!</p>
 							</div>
 						</div>
@@ -149,8 +152,7 @@
 								
 									<!-- ## MODULE TITLE ## -->
 									<div class="qcModTitle">
-										<h1>R S V P</h1>
-										<p>Fill out the following form.</p>
+										<p>Vul uw gegevens hieronder in, nadien ontvangt u een e-mail met een link ter bevestiging. Uw ticket is pas definitief na betaling.</p>
 									</div>
 									
 									<!-- ## TICKET FORM ## -->
@@ -199,66 +201,6 @@
 					</div>
 					<!-- ## ROW END ## -->
 
-					<!-- ## ROW ## -->
-					<div class="dblBorder">
-						<div class="row clearfix">
-							<div class="col-12 col">
-								<!-- ## MODULE TITLE ## -->
-								<div class="qcModTitle">
-									<h1>Pricing Table</h1>
-									<p>Ticket packages & Features</p>
-								</div>
-								<!-- ## PRICING ## -->
-								<div class="qcPricingWrapper clearfix">
-									<!-- ## PRICING 1 ## -->
-									<div class="qcPricing col-4 col">
-										<div class="box">
-											<header>Early Bird</header>
-											<div class="price"><span>$15</span> Per Entry</div>
-											<ul>
-												<li></li>
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Lorem ipsum dolor sit amet</li>
-											</ul>
-											<footer><a href="#">Buy Now</a></footer>
-										</div>
-									</div>
-									<!-- ## PRICING 2 ## -->
-									<div class="qcPricing col-4 col">
-										<div class="box">
-											<header>General</header>
-											<div class="price"><span>$25</span> Per Entry</div>
-											<ul>
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Lorem ipsum dolor sit amet</li>
-											</ul>
-											<footer><a href="#">Buy Now</a></footer>
-										</div>
-									</div>
-									<!-- ## PRICING 3 ## -->
-									<div class="qcPricing col-4 col">
-										<div class="box">
-											<header>VIP</header>
-											<div class="price"><span>$50</span> Per Entry</div>
-											<ul>
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Lorem ipsum dolor sit amet</li>
-												<li>Lorem ipsum dolor sit amet</li>
-											</ul>
-											<footer><a href="#">Buy Now</a></footer>
-										</div>
-									</div>
-								</div>
-								<!-- ## PRICING ## -->
-							</div>
-						</div>
-					</div>
-					<!-- ## ROW END ## -->
 
 				</div>
 				<!-- ## PAGE 1 END ## -->
