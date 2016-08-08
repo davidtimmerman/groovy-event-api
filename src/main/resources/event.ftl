@@ -30,19 +30,15 @@
 
 		<!-- ## LOGO ## -->
 		<div id="qcLogo" class="col-6 col">
-			<a href="/"><img src="./includes/img/jci_logo.png" style="margin-bottom:-10px" alt="" /><span style="
-    color: #fff;
-    font: 800 40px Roboto, sans-serif;
-    line-height: 100px;
-">  Deinze onderneemt!</span></a>
+			<a href="/"><img src="./includes/img/jci_logo.png" style="margin-bottom:-10px" alt="" /><span>  Deinze onderneemt!</span></a>
 		</div>
 
 
 		<!-- ## SITE NAVIGATION ## -->
 		<nav id="qcPriNav" class="col-6 col">
 			<ul class="clearfix">
-				<li class="current"><a href="event"><i class="icon-calendar-2 icon"></i> <span>Event Informatie</span></a></li>
-				<li><a href="reservaties"><i class="icon-ticket icon"></i> <span>Reserveer Tickets</span></a></li>
+				<li class="current"><a href="event"><i class="icon-calendar-2 icon"></i> <span>Informatie</span></a></li>
+				<li><a href="reservaties"><i class="icon-ticket icon"></i> <span>Tickets</span></a></li>
 			</ul>
 		</nav>
 
@@ -77,7 +73,6 @@
 					<li><a href="#tab-2"><i class="icon-clock-1 icon"></i> <span>Events</span></a></li>
 					<li><a href="#tab-3"><i class="icon-user-add icon"></i> <span>Speakers</span></a></li>
 					<li><a href="#tab-4"><i class="icon-map icon"></i> <span>Locatie</span></a></li>
-					<li><a href="#tab-5"><i class="icon-picture icon"></i> <span>Gallery</span></a></li>
 				</ul>
 
 
@@ -94,7 +89,7 @@
 						<!-- ## TAB TITLE & DESC ## -->
 						<div class="col-4 col">
 							<div class="qcTabTitle">
-								<h4>About<span> Know more about the event</span></h4>
+								<h4>Algemeen<span> meer over de business events</span></h4>
 							</div>
 							<p class="qcPageDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, accusamus, sed, necessitatibus ea nemo hic molestias amet tempora fuga pariatur officia itaque eum quis rerum aliquam minus illo nulla laborum!</p>
 						</div>
@@ -130,6 +125,59 @@
 					</div>
 					<!-- ## ROW END ## -->
 
+					<!-- ## ROW ## -->
+					<div class="dblBorder">
+						<div class="row clearfix">
+							<div class="col-12 col">
+								<!-- ## MODULE TITLE ## -->
+								<div class="qcModTitle">
+									<h1>Partners</h1>
+									<p>Deze events zijn mogelijk dankzij steun van onze partners</p>
+								</div>
+
+								<!-- ## SPONSORS LIST ## -->
+								<ul class="qcSposnsorList clearfix">
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+									<li>
+										<a href="#" class="tips" title="INTRODUCTION">
+											<img src="http://placehold.it/200x100" alt="" />
+										</a>
+									</li>
+								</ul>
+								<!-- ## SPONSERS LIST END ## -->
+							</div>
+						</div>
+					</div>
+					<!-- ## ROW END ## -->
 					<!-- ## ROW ## -->
 					<div class="dblBorder">
 						<div class="row clearfix">
@@ -200,60 +248,6 @@
 									</div>
 								</div>
 								<!-- ## TESTIMONIALS END ## -->
-							</div>
-						</div>
-					</div>
-					<!-- ## ROW END ## -->
-
-					<!-- ## ROW ## -->
-					<div class="dblBorder">
-						<div class="row clearfix">
-							<div class="col-12 col">
-								<!-- ## MODULE TITLE ## -->
-								<div class="qcModTitle">
-									<h1>Partners</h1>
-									<p>Those helping hands</p>
-								</div>
-
-								<!-- ## SPONSORS LIST ## -->
-								<ul class="qcSposnsorList clearfix">
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-									<li>
-										<a href="#" class="tips" title="INTRODUCTION">
-											<img src="http://placehold.it/200x100" alt="" />
-										</a>
-									</li>
-								</ul>
-								<!-- ## SPONSERS LIST END ## -->
 							</div>
 						</div>
 					</div>
@@ -662,102 +656,6 @@
 				</div>
 				<!-- ## PAGE 4 END ## -->
 
-
-
-				<!-- ===============================================
-
-					PAGE 5 - GALLERY
-
-				=============================================== -->
-				<div id="tab-5" class="qcTabPage clearfix">
-
-					<!-- ## ROW ## -->
-					<div class="stretch row clearfix">
-
-						<!-- ## TAB TITLE & DESC ## -->
-						<div class="col-4 col">
-							<div class="qcTabTitle">
-								<h4>Gallery<span> Some memories of the past event</span></h4>
-							</div>
-							<p class="qcPageDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, accusamus, sed, necessitatibus ea nemo hic molestias amet tempora fuga pariatur officia itaque eum quis rerum aliquam minus illo nulla laborum!</p>
-						</div>
-
-						<!-- ## GALLERY LIST ## -->
-						<div class="col-8 col">
-							<div class="video box no-border">
-								<ul id="imgGallery" class="clearfix">
-									<li>
-										<a href="http://placehold.it/600x300" class="tips video" title="Zedd" data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-									<li>
-										<a href="http://placehold.it/600x300" class="tips" title="Bassnectar" data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-									<li>
-										<a href="http://placehold.it/600x300" class="tips" title="Stereosonic" data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-									<li>
-										<a href="http://placehold.it/600x300" class="tips" title="OMFG!" data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-									<li>
-										<a href="http://placehold.it/600x300" class="tips" title="Excision" data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-									<li>
-										<a href="http://placehold.it/600x300" class="tips" title="BeuNos"  data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-									<li>
-										<a href="http://placehold.it/600x300" class="tips video" title="UltraMusic Festival" data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-									<li>
-										<a href="http://placehold.it/600x300" class="tips video" title="Zedd" data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-									<li>
-										<a href="http://placehold.it/600x300" class="tips" title="Bassnectar" data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-									<li>
-										<a href="http://placehold.it/600x300" class="tips" title="Stereosonic" data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-									<li>
-										<a href="http://placehold.it/600x300" class="tips" title="OMFG!" data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-									<li>
-										<a href="http://placehold.it/600x300" class="tips" title="Excision" data-rel="prettyPhoto[pp_gal]">
-											<img src="http://placehold.it/300x200" alt=""/>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!-- ## GALLERY LIST END ## -->
-
-					</div>
-					<!-- ## ROW END ## -->
-
-				</div>
-				<!-- ## PAGE 5 END ## -->
-
-
 			</div>
 			<!-- ## TABS END ## -->
 
@@ -778,24 +676,13 @@
 		<div class="col-5 col">
 			<nav id="qcFooterNav">
 				<ul class="clearfix">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="http://www.jcivlaanderen.be">JCI Vlaanderen</a></li>
+					<li><a href="http://jcideinze.be/">JCI Deinze & Leiestreek</a></li>
 				</ul>
 			</nav>
-		</div>
-
-		<!-- ## FOOTER LOGO ## -->
-		<div id="qcFooterLogo" class="col-2 col">
-			<a href="#">
-				<img src="./includes/img/placeholder/logo-footer.png" alt="LOGO" />
-			</a>
-		</div>
-
-		<!-- ## FOOTER COPYRIGHTS ## -->
-		<div id="qcFooterPara" class="col-5 col">
-			<p>EVENTICKA is the property of Macula Internet, Mumbai. <br /> <span>&copy;Copyrights QuadCodes 2014</span></p>
+			<div id="qcFooterPara">
+				<p><span>built by <a href="mailto:david.timmerman@gmx.com" target="_top">timbr</a> - &copy;Copyrights JCI Deinze 2016</span></p>
+			</div>
 		</div>
 
 	</div>

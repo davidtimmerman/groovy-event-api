@@ -36,7 +36,7 @@ $('#qcEventCountDown').countDown({
 		'day': 		29,
 		'month': 	09,
 		'year': 	2016,
-		'hour': 	19g,
+		'hour': 	19,
 		'min': 		0,
 		'sec': 		0
 	},

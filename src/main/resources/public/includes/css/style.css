@@ -66,7 +66,7 @@ Copyright: © 2014 QuadCodes.
 body {
     color: #777;
     font: 400 13px/26px "Roboto", sans-serif;
-    background: #000;
+    background: #fff;
 }
 .qcContainer {
     width: 1040px;
@@ -174,8 +174,8 @@ video#bgvid {
     top: -999em;
     left: 0;
     white-space: nowrap;
-    color: #ddd;
-    font: 100 24px/90px "Raleway", Helvetica, sans-serif;
+    color: #ddd;e
+    font: 300 24px/90px Roboto, sans-serif;
     letter-spacing: 0px;
     text-indent: 20px;
 }
@@ -217,8 +217,12 @@ video#bgvid {
     display: block;
 }
 #qcEventLogo img {
-    display: block;
-    width: 100%;
+    display: inline;
+}
+#qcEventLogo a span {
+    display: inline;
+    color: #fff;
+    font: 800 40px/40px "Roboto", sans-serif;
 }
 #qcEventLogo.loading {
     -webkit-animation: blinker 1s cubic-bezier(.5, 0, 1, 1) infinite alternate;
@@ -296,7 +300,7 @@ video#bgvid {
     position: absolute;
     left: 50%;
     margin-top: -2px;
-    margin: -2px 0 0 -10px;
+    margin: 0 0 0 -10px;
     border-left: 18px solid transparent;
     border-right: 18px solid transparent;
     border-top: 18px solid #0097d7;
@@ -396,6 +400,11 @@ video#bgvid {
 #qcLogo {
     background: #0097d7;
 }
+#qcLogo a span{
+    color: #fff;
+    font: 800 35px Roboto, sans-serif;
+    line-height: 100px;
+}
 #qcLogo a {
     display: block;
     text-align: center;
@@ -407,11 +416,10 @@ video#bgvid {
 #qcContentWrapper {
     background: #fff;
     margin-top: 101px;
-    padding-bottom: 125px;
+    padding-bottom: 75px;
 }
 #qcContent .qcContainer {
     border-top: 1px #aaa solid;
-    border-bottom: 4px #555 solid;
 }
 #qcContent .row > .col:nth-child(odd) .box {
     padding: 40px 40px 40px 0;
@@ -452,9 +460,9 @@ video#bgvid {
 }
 .qcModTitle h1 {
     margin-bottom: 15px;
-    color: #333;
-    font: 400 40px/40px "Roboto",Arial,sans-serif;
-    letter-spacing: -2px;
+    color: #f37121;
+    font: 300 40px/40px "Roboto",Arial,sans-serif;
+    letter-spacing: -1px;
 }
 .qcModTitle p {
     color: #777;
@@ -485,24 +493,22 @@ video#bgvid {
 
 #qcFooter {
     padding: 75px 0;
-    background: #916caf;
+    background: url(http://www.jcivlaanderen.be/gui/background_bottom.png) bottom right no-repeat;
 }
 #qcFooterNav li {
-    display: inline-block;
+    /*display: inline-block;*/
     list-style: none;
 }
 #qcFooterNav li a {
     display: block;
-    padding: 0 12px;
     color: #aaa;
     font: 600 15px/50px "Open sans", Helvetica, sans-serif;
     text-transform: uppercase;
 }
 #qcFooterNav li a:hover {
-    color: #fff;
+    color: #f37121;
 }
 #qcFooterPara {
-    text-align: right;
     color: #aaa;
     font: 400 12px/32px "Open sans", Helvetica, sans-serif;
 }
@@ -521,7 +527,10 @@ video#bgvid {
     margin-top: 8px;
     font-size: 12px;
     letter-spacing: 1px;
-    color: #ddd;
+    color: #aaa;
+}
+#qcFooterPara p span a {
+    color: #444;
 }
 
 

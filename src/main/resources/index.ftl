@@ -25,19 +25,15 @@
 	<div class="row">
 		<!-- ## LOGO ## -->
 		<div id="qcLogo" class="col-6 col">
-			<a href="/"><img src="./includes/img/jci_logo.png" style="margin-bottom:-10px" alt="" /><span style="
-    color: #fff;
-    font: 800 40px Roboto, sans-serif;
-    line-height: 100px;
-">  Deinze onderneemt!</span></a>
+			<a href="/"><img src="./includes/img/jci_logo.png" style="margin-bottom:-10px" alt="" /><span>  Deinze onderneemt!</span></a>
 		</div>
 
 
 		<!-- ## SITE NAVIGATION ## -->
 		<nav id="qcPriNav" class="col-6 col">
 			<ul class="clearfix">
-				<li><a href="event"><i class="icon-calendar-2 icon"></i> <span>Event Informatie</span></a></li>
-				<li class="current"><a href="reservaties"><i class="icon-ticket icon"></i> <span>Reserveer Tickets</span></a></li>
+				<li><a href="event"><i class="icon-calendar-2 icon"></i> <span>Informatie</span></a></li>
+				<li class="current"><a href="reservaties"><i class="icon-ticket icon"></i> <span>Tickets</span></a></li>
 			</ul>
 		</nav>
 
@@ -84,10 +80,10 @@
 		<!-- ## EVENT BANNER ## -->
 		<div id="qcEventBanner" class="col-6 col">
 			<ul>
-				<li><b>29-09-2016</b> De chocolade fabriek</li>
-				<li><b>24-11-2016</b> Over te nemen/Over te laten</li>
-				<li><b>16-02-2017</b> U bent?</li>
-				<li><b>Be Better.</b></li>
+				<li><b>29-09-2016</b> "De chocolade fabriek"</li>
+				<li><b>24-11-2016</b> "Over te nemen/Over te laten"</li>
+				<li><b>16-02-2017</b> "U bent?"</li>
+				<li><b>Be Better.<span style="font-size:20px;vertical-align: super;">&trade;</span></b></li>
 			</ul>
 		</div>
 
@@ -118,7 +114,7 @@
 <section id="qcOverlay">
 	<div id="qcEventLogo" class="loading">
 		<a href="#">
-			<img src="http://placehold.it/300x200&text=Center+Logo" alt="" />
+			<img src="http://www.deinze.be/App_Styles/Deinze/images/Logo-Deinze.png" alt=""><span> onderneemt!</span>
 		</a>
 	</div>
 </section>
@@ -144,9 +140,9 @@ jQuery(function($){
 		slide_links		:   'blank', // Individual links for each slide (Options: false, 'num', 'name', 'blank')
 		progress_bar	:	1,
 		slides 			:   [
-							{	image : 'http://placehold.it/1280x1024&text=Slide+1'
+							{	image : 'http://designbull.co.uk/wp-content/uploads/2015/04/speaking_event_web.jpg'
 							},
-							{	image : 'http://placehold.it/1280x1024&text=Slide+2'
+							{	image : 'http://www.franchiseopportunitiesjournal.com/wp-content/uploads/2014/03/bigstock-Business-Conference-Sized.jpg'
 							}
 						]
 	});

@@ -25,19 +25,15 @@
 
 		<!-- ## LOGO ## -->
 		<div id="qcLogo" class="col-6 col">
-			<a href="/"><img src="./includes/img/jci_logo.png" style="margin-bottom:-10px" alt="" /><span style="
-    color: #fff;
-    font: 800 40px Roboto, sans-serif;
-    line-height: 100px;
-">  Deinze onderneemt!</span></a>
+			<a href="/"><img src="./includes/img/jci_logo.png" style="margin-bottom:-10px" alt="" /><span>  Deinze onderneemt!</span></a>
 		</div>
 
 
 		<!-- ## SITE NAVIGATION ## -->
 		<nav id="qcPriNav" class="col-6 col">
 			<ul class="clearfix">
-				<li><a href="event"><i class="icon-calendar-2 icon"></i> <span>Event Informatie</span></a></li>
-				<li class="current"><a href="reservaties"><i class="icon-ticket icon"></i> <span>Reserveer Tickets</span></a></li>
+				<li><a href="event"><i class="icon-calendar-2 icon"></i> <span>Informatie</span></a></li>
+				<li class="current"><a href="reservaties"><i class="icon-ticket icon"></i> <span>Tickets</span></a></li>
 			</ul>
 		</nav>
 
@@ -469,24 +465,13 @@
 		<div class="col-5 col">
 			<nav id="qcFooterNav">
 				<ul class="clearfix">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="http://www.jcivlaanderen.be">JCI Vlaanderen</a></li>
+					<li><a href="http://jcideinze.be/">JCI Deinze & Leiestreek</a></li>
 				</ul>
 			</nav>
-		</div>
-
-		<!-- ## FOOTER LOGO ## -->
-		<div id="qcFooterLogo" class="col-2 col">
-			<a href="#">
-				<img src="./includes/img/placeholder/logo-footer.png" alt="LOGO" />
-			</a>
-		</div>
-
-		<!-- ## FOOTER COPYRIGHTS ## -->
-		<div id="qcFooterPara" class="col-5 col">
-			<p>EVENTICKA is the property of Macula Internet, Mumbai. <br /> <span>&copy;Copyrights QuadCodes 2014</span></p>
+			<div id="qcFooterPara">
+				<p><span>built by <a href="mailto:david.timmerman@gmx.com" target="_top">timbr</a> - &copy;Copyrights JCI Deinze 2016</span></p>
+			</div>
 		</div>
 
 	</div>
