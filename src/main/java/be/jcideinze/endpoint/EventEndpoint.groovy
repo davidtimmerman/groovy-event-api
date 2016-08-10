@@ -1,8 +1,10 @@
 package be.jcideinze.endpoint
 
 import be.jcideinze.exceptions.RegistrationNotFoundException
-import be.jcideinze.model.api.Registration
+import be.jcideinze.exceptions.UserNotFoundException
+import be.jcideinze.model.db.Registration
 import be.jcideinze.model.User
+import be.jcideinze.service.AuthenticationService
 import be.jcideinze.service.RegistrationService
 import be.jcideinze.service.UserService
 import com.fasterxml.jackson.databind.ObjectMapper
@@ -24,13 +26,16 @@ class EventEndpoint implements Endpoint {
             mapper.readValue(delegate, T)
         }
         get("$path/confirm/:uuid", { req, res ->
-            RegistrationService.instance.confirmRegistration(req.params('uuid'))
+            Registration r = RegistrationService.instance.confirmRegistration(req.params('uuid'))
             //todo call authentication business and create a jwt - set a cookie and add the jwt
+            def user = UserService.instance.read(r.participantId)
+            def token = AuthenticationService.instance.createJwt(user.orElseThrow({-> new UserNotFoundException()}).email)
+            res.cookie("jwt", token, 36000);
             res.redirect("/reservaties")
         })
 
         put("$path/:id/register", { req, res ->
-            Registration r = req.body().mapTo(Registration)
+            be.jcideinze.model.api.Registration r = req.body().mapTo(be.jcideinze.model.api.Registration)
             assert r.isValid()
             final User u = UserService.instance.create(new User(r.email, r.firstName, r.lastName))
             final UUID uuid = RegistrationService.instance.registerInCache(u, Long.parseLong(req.params('id')), r.vat)

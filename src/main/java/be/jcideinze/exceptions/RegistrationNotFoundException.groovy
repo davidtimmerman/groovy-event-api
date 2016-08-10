@@ -2,7 +2,12 @@ package be.jcideinze.exceptions
 
 class RegistrationNotFoundException extends Exception{
 
-    RegistrationNotFoundException(String message) {
-        super(message);
+    RegistrationNotFoundException() {
+        super();
+    }
+
+    @Override
+    public String getMessage() {
+        "Reservatie niet teruggevonden."
     }
 }

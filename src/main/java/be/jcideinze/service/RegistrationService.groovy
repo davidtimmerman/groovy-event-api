@@ -44,11 +44,11 @@ class RegistrationService {
      */
     Registration confirmRegistration(String uuid) {
         Optional<Registration> registration = findCachedRegistration uuid
-        def r = RegistrationRepository.instance.create(registration.orElseThrow(new RegistrationNotFoundException("Reservatie niet teruggevonden")))
+        def r = RegistrationRepository.instance.create(registration.orElseThrow({ -> new RegistrationNotFoundException()}))
         r.get()
     }
 
     private Optional<Registration> findCachedRegistration(String uuid) {
-        Optional.ofNullable(cache.peekAndRemove(uuid))
+        Optional.ofNullable(cache.peek(uuid)) //peekAndRemove
     }
 }

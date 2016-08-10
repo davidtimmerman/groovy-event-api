@@ -22,7 +22,7 @@ class AuthenticationService {
         Jwts.parser().setSigningKey(key).parseClaimsJws jwt
     }
 
-    private String createJwt(String sub) {
+    public String createJwt(String sub) {
         Jwts.builder().setSubject(sub).signWith(SignatureAlgorithm.HS512, key).compact()
     }
 
