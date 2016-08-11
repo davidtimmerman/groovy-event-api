@@ -48,6 +48,16 @@ class RegistrationService {
         r.get()
     }
 
+    /**
+     * Get all registrations for user
+     *
+     * @param Long userId id for which to find the registrations
+     * @return Registration the result of the database insert
+     */
+    List<Registration> findRegistrations(Long userId) {
+        RegistrationRepository.instance.read(userId)
+    }
+
     private Optional<Registration> findCachedRegistration(String uuid) {
         Optional.ofNullable(cache.peek(uuid)) //peekAndRemove
     }

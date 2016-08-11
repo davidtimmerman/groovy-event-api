@@ -26,13 +26,17 @@ class AuthenticationService {
         Jwts.builder().setSubject(sub).signWith(SignatureAlgorithm.HS512, key).compact()
     }
 
+    String identify(String jwt) {
+        Jwts.parser().setSigningKey(key).parseClaimsJws(jwt).getBody().getSubject()
+    }
+
     String login(String uuid, String jwt) {
         def token = cache.peekAndRemove(uuid)
         assert token.equals(jwt)
         jwt
     }
 
-    String identify(String email) {
+    String createJWT(String email) {
         UUID u = UUID.randomUUID()
         String jwt = createJwt(email)
         cache.put(u.toString(), jwt)

@@ -64,11 +64,11 @@
 
 				<!-- ## TAB NAV ## -->
 				<ul id="qcTabNav" class="clearfix">
-					<li><a href="#tab-5"><i class="icon-tag-1 icon"></i> <span>Reservatie Status</span></a></li>
 					<li><a href="#tab-1"><i class="icon-ticket icon"></i> <span>Nieuwe Reservatie</span></a></li>
-					<li><a href="#tab-2"><i class="icon-book-open icon"></i> <span>FAQ's</span></a></li>
-					<li><a href="#tab-3"><i class="icon-lkdto icon"></i> <span>Voorwaarden</span></a></li>
-					<li><a href="#tab-4"><i class="icon-mail-1 icon"></i> <span>Contact</span></a></li>
+					<li><a href="#tab-2><i class="icon-tag-1 icon"></i> <span>Reservatie Status</span></a></li>
+					<li><a href="#tab-3"><i class="icon-book-open icon"></i> <span>FAQ's</span></a></li>
+					<li><a href="#tab-4"><i class="icon-lkdto icon"></i> <span>Voorwaarden</span></a></li>
+					<li><a href="#tab-5"><i class="icon-mail-1 icon"></i> <span>Contact</span></a></li>
 				</ul>
 
 

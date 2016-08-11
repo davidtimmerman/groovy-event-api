@@ -2,7 +2,6 @@ package be.jcideinze.endpoint
 
 import be.jcideinze.service.AuthenticationService
 
-import static spark.Spark.before
 import static spark.Spark.get
 
 @Singleton
@@ -21,9 +20,9 @@ class AuthenticationEndpoint implements Endpoint {
             }
         });*/
 
-        get("$path/identify", { req, res ->
+        get("$path/createJWT", { req, res ->
             final String email = req.queryParams("email")
-            def jwt = AuthenticationService.instance.identify(email)
+            def jwt = AuthenticationService.instance.createJWT(email)
             //email is sent
             //res.cookie("jwt", jwt, 36000); //set cookie to secure
             jwt

@@ -19,4 +19,13 @@ class RegistrationRepository {
             return new Optional<Registration>()
         }
     }
+
+    List<Registration> read(Long userId) {
+        def results = []
+        def rows = sql.eachRow('select * from REGISTRATIONS where subscriber = :userId', [userId:userId] {
+            row ->
+                results << row as Registration
+        })
+
+    }
 }

@@ -6,7 +6,7 @@ import be.jcideinze.model.db.Registration
 import be.jcideinze.model.User
 import be.jcideinze.service.AuthenticationService
 import be.jcideinze.service.RegistrationService
-import be.jcideinze.service.UserService
+import be.jcideinze.repository.UserRepository
 import com.fasterxml.jackson.databind.ObjectMapper
 
 import static spark.Spark.*
@@ -28,7 +28,7 @@ class EventEndpoint implements Endpoint {
         get("$path/confirm/:uuid", { req, res ->
             Registration r = RegistrationService.instance.confirmRegistration(req.params('uuid'))
             //todo call authentication business and create a jwt - set a cookie and add the jwt
-            def user = UserService.instance.read(r.participantId)
+            def user = UserRepository.instance.read(r.participantId)
             def token = AuthenticationService.instance.createJwt(user.orElseThrow({-> new UserNotFoundException()}).email)
             res.cookie("jwt", token, 36000);
             res.redirect("/reservaties")
@@ -37,12 +37,26 @@ class EventEndpoint implements Endpoint {
         put("$path/:id/register", { req, res ->
             be.jcideinze.model.api.Registration r = req.body().mapTo(be.jcideinze.model.api.Registration)
             assert r.isValid()
-            final User u = UserService.instance.create(new User(r.email, r.firstName, r.lastName))
+            final User u = UserRepository.instance.create(new User(r.email, r.firstName, r.lastName))
             final UUID uuid = RegistrationService.instance.registerInCache(u, Long.parseLong(req.params('id')), r.vat)
             RegistrationService.instance.requestConfirmation(uuid, u.email)
 
 
             res.status(200)
+        })
+
+        /*
+        * Authenticated endpoints
+        * */
+
+        get("$path/registrations", { req, res ->
+            def token = req.cookie("jwt")
+            //identify the user based on the jwt
+            def email = AuthenticationService.instance.identify(token)
+            //get the user from the db
+            User user = UserRepository.instance.find(email)
+            //get all the registrations
+            RegistrationService.instance.findRegistrations(user.id)
         })
     }
 
